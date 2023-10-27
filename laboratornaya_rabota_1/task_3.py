@@ -1,19 +1,10 @@
-#площадь круга:
+quantity_pages = 100
+quantity_lines = 50
+quantity_symbols = 25
+storage_symbol = 4 #размер одного символа в байтах
+mesto_na_diskete = 1.44 * 1024 * 1024 #место на дискете в байтах
+weight_one_book = quantity_pages * quantity_lines * quantity_symbols *storage_symbol #вес одной книги в байтах
 
-pi = 3.1415 #число пи
-r = 5 #радиус
-sq_round = pi * r ** 2
-print('площадь круга:', round(sq_round, 2))
+quantity_books = mesto_na_diskete // weight_one_book
 
-#длина окружности:
-len_r = 2 * pi * r
-print('длина окружности:', round(len_r, 2))
-
-#периметр квадрата:
-a = 5 #сторона квадрата
-p_sq = 4 * a
-print('периметр квадрата:', p_sq)
-
-#площадь квадрата:
-sq_sq = a ** 2
-print('площадь квадрата:', sq_sq)
+print("Количество книг, помещающихся на дискету:", quantity_books)
