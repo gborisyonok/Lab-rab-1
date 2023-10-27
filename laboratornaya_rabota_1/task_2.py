@@ -1,30 +1,8 @@
-#Строки
-full_name = 'Gloria ' + 'Borisyonok' #сложение строк
-print(full_name)
+list_players = ["Маша", "Петя", "Саша", "Оля", "Кирилл", "Коля"]
 
-message = 'Ура!'
-repeated_message = message * 3
-print(repeated_message)
-
-#Списки
-concatenated_list = [3, 4, 5] + [7, 8, 9]
-print(concatenated_list)
-
-multiplied_list = [7, 9, 11] * 5
-print(multiplied_list)
-
-#Кортежи
-tuple_ = (5, 6, 7)
-print(tuple_)
-
-#Словари
-week ={
-    1:'понедельник',
-    2:'вторник',
-    3:'среда'
-}
-print('дни недели', week)
-
-#Множества
-set_ = {9, 'hello'}
-print(set_)
+# TODO Разделите участников на две команды
+middle_index = len(list_players) // 2
+first_team = list_players[:middle_index]
+second_team = list_players[middle_index:]
+print(first_team)
+print(second_team)
